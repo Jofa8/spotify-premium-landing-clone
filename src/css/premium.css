@@ -1,0 +1,169 @@
+.premium {
+  background-color: #efefef;
+  padding: 75px 15px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -1.6px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 50px 0 26px;
+  }
+
+  &__card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 30%) 0 0 8px;
+    padding: 16px;
+  }
+
+  &__free {
+    background-color: rgb(29 117 222);
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  &__plan {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  &__cost {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 2px;
+  }
+
+  &__accounts {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+
+  &__advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 261px;
+    margin: 20px 0 16px;
+  }
+
+  &__advantage {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 5px;
+
+    &__text {
+      display: inline;
+      line-height: 22px;
+      width: 80%;
+      font-weight: 700;
+    }
+
+    &__icon {
+      width: 20%;
+      stroke-width: 1pt;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191414;
+    color: #fff;
+    border-radius: 500px;
+    padding: 14px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:hover {
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.04);
+      background-color: #0b0909;
+      border: 2px solid #0b0909;
+    }
+  }
+
+  &__small-text {
+    margin-top: 55px;
+    color: rgb(83 83 83);
+    text-align: left;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .premium {
+    &__title {
+      font-size: 32px;
+      letter-spacing: -1.28px;
+    }
+
+    &__cards {
+      grid-template-columns: 100%;
+    }
+
+    &__card {
+      max-width: 440px;
+      padding: 20px;
+    }
+
+    &__advantages {
+      min-height: 0;
+    }
+
+    &__advantage {
+      &__text {
+        width: 90%;
+      }
+
+      &__icon {
+        width: 10%;
+      }
+    }
+
+    &__button {
+      transform: translate(-50%, -30%);
+
+      &:hover {
+        transform: translate(-50%, -30%) scale(1.04);
+      }
+    }
+
+    &__small-text {
+      margin-top: 65px;
+    }
+  }
+}

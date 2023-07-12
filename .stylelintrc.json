@@ -1,0 +1,13 @@
+{
+  "extends": "stylelint-config-standard",
+  "customSyntax": "postcss-syntax",
+  "rules": {
+    "declaration-block-no-duplicate-properties": true,
+    "no-unknown-animations": true,
+    "selector-max-universal": 1,
+    "import-notation": "string",
+    "string-quotes": "single",
+    "no-descending-specificity": true,
+    "at-rule-no-unknown": null
+  }
+}

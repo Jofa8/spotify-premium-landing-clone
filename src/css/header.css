@@ -1,0 +1,67 @@
+.header {
+  background-color: #000;
+  margin: 0 auto;
+  padding: 20px 15px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__svg {
+    color: #fff;
+    height: 42px;
+  }
+
+  &__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+  }
+
+  &__link {
+    color: #fff;
+  }
+
+  &__link:hover {
+    color: #1ed760;
+  }
+
+  &__span {
+    color: #fff;
+    font-weight: 100;
+    user-select: none;
+  }
+
+  &__button {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+
+    & svg {
+      height: 22px;
+      width: 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    padding: 13px 25px;
+
+    &__svg {
+      height: 27px;
+    }
+
+    &__ul {
+      display: none;
+    }
+
+    &__button {
+      display: block;
+    }
+  }
+}
